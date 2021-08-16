@@ -1,0 +1,24 @@
+# data file for the Fltk User Interface Designer (fluid)
+version 1.0305
+header_name {.h}
+code_name {.cxx}
+Function {make_window()} {
+  comment {Create main window} open
+} {
+  Fl_Window counter_win {
+    label Counter open
+    xywh {734 162 375 355} type Double hide resizable
+  } {
+    Fl_Return_Button increment_btn {
+      label Increment
+      tooltip {Increment the counter by 1.} xywh {105 30 155 80}
+    }
+    Fl_Button decrement_btn {
+      label Decrement
+      tooltip {Decrement the counter by 1.} xywh {105 240 155 90}
+    }
+    Fl_Output output_text {selected
+      tooltip {Counter value} xywh {105 160 155 25} labeltype NO_LABEL resizable
+    }
+  }
+}
